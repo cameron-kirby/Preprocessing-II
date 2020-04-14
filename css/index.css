@@ -330,6 +330,7 @@ header nav a {
   font-size: 2rem;
   border-radius: 10px;
   color: #212529;
+  transition: 0.5s;
 }
 .btn:hover {
   background-color: #212529;

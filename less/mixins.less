@@ -1,1 +1,36 @@
 // Mixins in here
+.flex-mixin(@direction, @justify) {
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.custom-btn(@bg-color: @button-bg, @size: 200px, @ft-color: black){
+    display: block;
+    text-align: center;
+    line-height: 2;
+     background-color: @bg-color;
+     margin: 0 10px 20px;
+     cursor: pointer;
+     width: @size;
+     height: 45px;
+     font-size: 2rem;
+     border-radius: 10px;
+     color: @font-color;
+ 
+     &:hover{
+       background-color:@font-color;
+       color:@bg-color;
+     }
+     @media @mobile {
+       .custom-btn {
+         width: 90%;
+         height: 50px;
+         font-size: 2.5rem;
+       }
+     }
+ }
+
+ .animate(@time) {
+     transition: @time;
+ }
